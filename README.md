@@ -14,15 +14,15 @@ tupian.jpg
 ##### /xxl-job/doc/db/tables_xxl_job.sql
 
 ### 3.1.1 修改调度中心配置
-#### 文件位置为:
+##### 文件位置为:
 ##### /xxl-job/xxl-job-admin/src/main/resources/application.properties
 ##### 主要修改jdbc连接，若需报警邮箱功能也可以配置
-#### JDBC链接：
+##### JDBC链接：
 ##### spring.datasource.url=jdbc:mysql://127.0.0.1:3306/xxl_job?Unicode=true&characterEncoding=UTF-8
 ##### spring.datasource.username=root
 ##### spring.datasource.password=root_pwd
 ##### spring.datasource.driver-class-name=com.mysql.jdbc.Driver
-#### 报警邮箱
+##### 报警邮箱
 ##### spring.mail.host=smtp.qq.com
 ##### spring.mail.port=25
 ##### spring.mail.username=xxx@qq.com
@@ -39,10 +39,10 @@ tupian.jpg
 
 ## 3.2 配置xxl-job-executor-sample-springboot：执行器工程
 ### 3.2.1
-#### 确认pom文件中引入了 "xxl-job-core" 的maven依赖；
+##### 确认pom文件中引入了 "xxl-job-core" 的maven依赖；
 
-### 3.2.2 修改调度中心配置
-#### 文件位置为:
+### 3.2.2 修改执行器工程配置
+##### 文件位置为:
 ##### /xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/application.properties
 
 ##### 执行器配置，主要修改xxl.job.admin.addresses地址，配置调度中心地址
@@ -60,6 +60,16 @@ tupian.jpg
 ##### xxl.job.executor.logpath=/data/applogs/xxl-job/jobhandler
 ##### 执行器日志保存天数 [选填] ：值大于3时生效，启用执行器Log文件定期清理功能，否则不生效；
 ##### xxl.job.executor.logretentiondays=-1
+
+### 3.2.3 启动调度中心项目
+##### 如果已经正确进行上述配置，直接运行/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/com.xxl.job.executor/XxlJobExecutorApplication.class
+### 至此“执行器”项目已经部署成功。
+
+## 3.3 开发定时任务
+### 步骤1：
+登录调度中心，点击下图所示“新建任务”按钮，新建示例任务。然后，参考下面截图中任务的参数配置，点击保存
+
+
 
 
 
