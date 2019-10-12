@@ -16,7 +16,7 @@ tupian.jpg
 ### 3.1.1 修改调度中心配置
 ##### 文件位置为:
 ##### /xxl-job/xxl-job-admin/src/main/resources/application.properties
-##### 主要修改jdbc连接，若需报警邮箱功能也可以配置
+##### **主要修改jdbc连接，若需报警邮箱功能也可以配置**
 ##### JDBC链接：
 ##### spring.datasource.url=jdbc:mysql://127.0.0.1:3306/xxl_job?Unicode=true&characterEncoding=UTF-8
 ##### spring.datasource.username=root
@@ -45,7 +45,8 @@ tupian.jpg
 ##### 文件位置为:
 ##### /xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/application.properties
 
-##### 执行器配置，主要修改xxl.job.admin.addresses地址，配置调度中心地址
+##### 执行器配置
+##### **主要修改xxl.job.admin.addresses地址，配置调度中心地址**
 ##### 调度中心部署跟地址 [选填]：如调度中心集群部署存在多个地址则用逗号分隔。执行器将会使用该地址进行"执行器心跳注册"和"任务结果回调"；为空则关闭自动注册；
 ##### xxl.job.admin.addresses=http://127.0.0.1:8080/xxl-job-admin
 ##### 执行器AppName [选填]：执行器心跳注册分组依据；为空则关闭自动注册
