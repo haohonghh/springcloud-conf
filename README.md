@@ -69,6 +69,7 @@ tupian.jpg
 ## 3.3 开发定时任务
 ### 步骤1：
 登录调度中心，点击下图所示“新建任务”按钮，新建示例任务。然后，参考下面截图中任务的参数配置，点击保存
+![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png "RUNOOB")
 
 
 
